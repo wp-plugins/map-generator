@@ -10,7 +10,7 @@ Add Google Maps and Street View Scence to you blog.
 
 == Description ==
 
-This Plugin adds custom maps from map-generator.net to your blog.
+This Plugin adds custom maps from <a href="http://map-generator.net/">Map-Generator.net</a> to your blog.
 You can insert Maps with:
 
 * Multible markers
@@ -27,7 +27,7 @@ You can insert Maps with:
 
 == Screenshots ==
 
-1. The Plugin adds shortcode functionality for maps from Map-Generator.net and a Button in your WYSIWYG-Editor
+1. The Plugin adds shortcode functionality for maps from <a href="http://map-generator.net/">Map-Generator.net</a> and a Button in your WYSIWYG-Editor
 2. On Click you'll get an interface to insert your Map
 3. Some examples...
 
