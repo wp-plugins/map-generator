@@ -12,6 +12,7 @@ Add Google Maps and Street View Scence to you blog.
 
 This Plugin adds custom maps from map-generator.net to your blog.
 You can insert Maps with:
+
 * Multible markers
 * Custom Markers
 * Info Windows (Title and Description)
