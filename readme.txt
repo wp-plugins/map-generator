@@ -1,5 +1,6 @@
 === Map-Generator ===
 Contributors: MapGenerator
+Donate link: http://map-generator.net/
 Tags: maps, google maps, street view, generator, shortcode, marker, infowindow
 Requires at least: 3.0
 Tested up to: 3.4
