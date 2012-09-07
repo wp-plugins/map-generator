@@ -37,6 +37,9 @@ You can insert Maps with:
 
 == Changelog ==
 
+= 1.2 =
+* opend Plugin for other providers
+
 = 1.1 =
 * update License to GPLv3 
 

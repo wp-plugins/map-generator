@@ -3,7 +3,7 @@
 Plugin Name: Map-Generator
 Plugin URI: http://map-generator.net/de
 Description: This Plugin adds custom maps from map-generator.net to your blog. You can now add multible marker, change the Marker apperance, size, view the map as StreetView and much more.
-Version: 1.1
+Version: 1.2
 Author: Map-Generator.net
 Author Email: mailus@map-generator.net
 License:
@@ -25,7 +25,6 @@ License:
 
   
 */
-
 
 class MapGenerator {
 
@@ -76,9 +75,20 @@ class MapGenerator {
 		
 		// extract the url from the link
 		preg_match($reg_exp, $url, $map_gen_id, NULL, 0);
-		
+
+		// check if we got an url or just an id
+		$pos = strpos($url, "http://");
+
+		if ($pos === false) {
+			// we got just an id -> fall back to map-generator
+			$map_path = "http://map-generator.net/de/maps/".$map_gen_id[0].".js"
+		} else {
+			// take the given url
+			$map_path = $url.".js"
+		}
+
 		// build include tag
-		$tag = "<div id=\"map_canvas_custom_".$map_gen_id[0]."\" style=\"width:".$width."; height:".$height."\" ></div><script type=\"text/javascript\">(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.src = \"http://map-generator.net/de/maps/".$map_gen_id[0].".js\";s.parentNode.insertBefore(g, s);}(document, \"script\"));</script>";
+		$tag = "<div id=\"map_canvas_custom_".$map_gen_id[0]."\" style=\"width:".$width."; height:".$height."\" ></div><script type=\"text/javascript\">(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.src = \"".$map_path."\";s.parentNode.insertBefore(g, s);}(document, \"script\"));</script>";
 		
 		return $tag;
 	}
