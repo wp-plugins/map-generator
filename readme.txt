@@ -37,6 +37,9 @@ You can insert Maps with:
 
 == Changelog ==
 
+= 1.3 =
+* fixed bug "missin semicolons"
+
 = 1.2 =
 * opend Plugin for other providers
 

@@ -3,7 +3,7 @@
 Plugin Name: Map-Generator
 Plugin URI: http://map-generator.net/de
 Description: This Plugin adds custom maps from map-generator.net to your blog. You can now add multible marker, change the Marker apperance, size, view the map as StreetView and much more.
-Version: 1.2
+Version: 1.3
 Author: Map-Generator.net
 Author Email: mailus@map-generator.net
 License:
