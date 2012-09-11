@@ -81,10 +81,10 @@ class MapGenerator {
 
 		if ($pos === false) {
 			// we got just an id -> fall back to map-generator
-			$map_path = "http://map-generator.net/de/maps/".$map_gen_id[0].".js"
+			$map_path = "http://map-generator.net/de/maps/".$map_gen_id[0].".js";
 		} else {
 			// take the given url
-			$map_path = $url.".js"
+			$map_path = $url.".js";
 		}
 
 		// build include tag
